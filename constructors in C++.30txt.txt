@@ -1,0 +1,290 @@
+
+constructors in C++
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public:
+    string make;
+    string model;
+    int year;
+    //default constructor (no parameter)
+    Car()
+    {
+        make = "BENZ";
+        model = "xo8";
+        year = 2;
+    }
+    void displayinfo()
+    {
+        cout<<year<<" "<<make<<" "<<model<<endl;
+    }
+};
+
+int main()
+{
+    //creating anobject using default constuctor 
+    Car myCar;
+
+    //displaying the information
+    myCar.displayinfo();
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public:
+    string name;
+    string dept;
+    int experience;
+    double salary;
+    
+    //construtor
+    Teacher()
+    {
+        cout<<"i am a default construtor"<<endl;
+    }
+    void displayinfo()
+    {
+        cout<<"teacher name : "<<name<<endl;
+        cout<<"department : "<<name<<endl;
+        cout<<"experience : "<<name<<endl;
+        cout<<"salary : "<<name<<endl;
+    }
+};
+
+int main()
+{
+    Teacher T1; //creat an object
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public:
+    string name;
+    string dept;
+    int experience;
+    double salary;
+    
+    //construtor
+    Teacher()
+    {
+        name = "Anitha";
+        dept = "english";
+        experience = 15;
+        salary = 100000;
+    }
+    void displayinfo()
+    {
+        cout<<"Teacher name : "<<name<<endl;
+        cout<<"Department : "<<dept<<endl;
+        cout<<"Experience : "<<experience<<endl;
+        cout<<"Salary : "<<salary<<endl;
+    }
+};
+
+int main()
+{
+    Teacher T1; //creat an object
+    T1.displayinfo(); 
+    return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public:
+    string name;
+    string dept;
+    int experience;
+    double salary;
+    
+    //construtor
+    Teacher()
+    {
+        name = "Anitha";
+        dept = "english";
+        experience = 15;
+        salary = 100000;
+        cout<<"Teacher name : "<<name<<endl;
+        cout<<"Department : "<<dept<<endl;
+        cout<<"Experience : "<<experience<<endl;
+        cout<<"Salary : "<<salary<<endl;
+    }
+
+};
+
+int main()
+{
+    Teacher T1; //creat an object
+    
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public:
+    string name;
+    string dept;
+    int experience;
+    int salary;
+    
+    //construtor
+    Teacher()
+    {
+        
+        cout<<"Teacher name : "<<"anitha"<<endl;
+        cout<<"Department : "<<"english"<<endl;
+        cout<<"Experience : "<<15<<endl;
+        cout<<"Salary : "<<100000<<endl;
+    }
+
+};
+
+int main()
+{
+    Teacher T1; //creat an object
+    
+    return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public:
+    string name;
+    string dept;
+    int experience;
+    int salary;
+    
+    //construtor
+    Teacher(string n, string d, int e, int s)
+    {
+        
+        cout<<"Teacher name : "<<n<<endl;
+        cout<<"Department : "<<d<<endl;
+        cout<<"Experience : "<<e<<endl;
+        cout<<"Salary : "<<s<<endl;
+    }
+
+};
+
+int main()
+{
+    Teacher T1("Anitha","english",15,100000); //creat an object
+    cout<<endl;
+    Teacher T2("lalitha","hindi",16,100000);
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Movie
+{
+    public:
+    string Movie_title;
+    string Director;
+    double Duration;
+    double Collection;
+    double Rating;
+    //construtor
+    Movie()
+    {
+        Movie_title = "pushpa 2";
+        Director = "sukumar";
+        Duration = 3.15;
+        Collection = 2000;
+        Rating = 9.6;
+        cout<<"Movie_title : "<<Movie_title<<endl;
+        cout<<"Director : "<<Director<<endl;
+        cout<<"Duration : "<<Duration<<".hr"<<endl;
+        cout<<"collection : "<<Collection<<".cr"<<endl;
+        cout<<"Rating : "<<Rating<<endl;
+    }
+};
+
+int main()
+{
+    Movie M1; //creat an object
+   
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Parent
+{
+    public :
+    void food()
+    {
+       cout <<"inherited burger";   
+    }
+};
+class Child : public Parent //creating the child class and inherited it
+{};
+
+int main()
+{
+    Child b;
+    b.food();
+    return 0;
+}
+

@@ -1,0 +1,333 @@
+public in c++
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public: //public access specifier
+    string brand;
+    string model;
+    int price;
+    int year;
+};
+
+int main()
+{
+    Car car1; //creating an object of the class car
+    car1.brand = "BMW";
+    car1.model = "b-class";
+    car1.price = 5000000;
+    car1.year = 2024;
+    
+    cout<<car1.brand<<endl; //direct way of printing
+    cout<<car1.model<<endl; //direct way of printing
+    cout<<car1.price<<endl; //direct way of printing
+    cout<<car1.year<<endl; //direct way of printing
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public: //public access specifier
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    //function to dispaly the output
+    void display()
+    {
+        cout<<"brand name"<<brand<<endl;
+        cout<<"model name"<<model<<endl;
+        cout<<"price"<<price<<endl;
+        cout<<"year of manufacturing :"<<year<<endl;
+    }
+    
+};
+
+int main()
+{
+    Car car1; //creating an object of the class car
+    car1.brand = "BMW";
+    car1.model = "b-class";
+    car1.price = 5000000;
+    car1.year = 2024;
+    
+    cout<<car1.brand<<endl; //direct way of printing
+    cout<<car1.model<<endl; //direct way of printing
+    
+    car1.display(); //display the o/p using function
+    return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public: //public access specifier
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    //function to dispaly the output
+    void display()
+    {
+        cout<<"brand name"<<brand<<endl;
+        cout<<"model name"<<model<<endl;
+        cout<<"price"<<price<<endl;
+        cout<<"year of manufacturing :"<<year<<endl;
+    }
+    
+};
+
+int main()
+{
+    Car car1; //creating an object of the class car
+    car1.brand = "BMW";
+    car1.model = "b-class";
+    car1.price = 5000000;
+    car1.year = 2024;
+    
+    Car car2; //creating an object of the class car
+    car2.brand = "mercedes";
+    car2.model = "g-class";
+    car2.price = 7000000;
+    car2.year = 2014;
+    
+    car1.display();
+    cout<<endl;
+    car2.display();//display the o/p using function
+    return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public: //public access specifier
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    //function to dispaly the output
+    void display()
+    {
+        cout<<"brand name"<<brand<<endl;
+        cout<<"model name  "<<model<<endl;
+        cout<<"price"<<price<<endl;
+        cout<<"year of manufacturing :"<<year<<endl;
+    }
+    
+};
+
+int main()
+{
+    Car car1; //creating an object of the class car
+    cout<<"enter the brand name : "<<endl;
+    //cin >>car1 . brand;
+    getline(cin,car1.brand);
+    cout<<"enter the model name : "<<endl;
+    getline(cin,car1.model);
+    cout<<"enter the price : "<<endl;
+    cin >>car1 . brand;
+    cout<<"enter the man.f year : "<<endl;
+    cin >>car1 . brand;
+    car1.display();
+    return 0;
+}
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    public: //public access specifier
+    string brand;
+    string model;
+    int price;
+    int year;
+    
+    //function to dispaly the output
+    void display()
+    {
+        cout<<"brand name   "<<brand<<endl;
+        cout<<"model name  "<<model<<endl;
+        cout<<"price  "<<price<<endl;
+        cout<<"year of manufacturing:  "<<year<<endl;
+    }
+    
+};
+
+int main()
+{
+    Car car1; //creating an object of the class car
+    cout<<"enter the brand name : "<<endl;
+    //cin >>car1 . brand;
+    getline(cin,car1.brand);
+    cout<<"enter the model name : "<<endl;
+    getline(cin,car1.model);
+    cout<<"enter the price : "<<endl;
+    cin >>car1 . price;
+    cout<<"enter the man.f year : "<<endl;
+    cin >>car1 . year;
+    
+    cin.ignore(); //buffer value will be ignored
+    
+    Car car2; //creating an object of the class car
+    cout<<"enter the brand name : "<<endl;
+    //cin >>car1 . brand;
+    getline(cin,car2.brand);
+    cout<<"enter the model name : "<<endl;
+    getline(cin,car2.model);
+    cout<<"enter the price : "<<endl;
+    cin >>car2 . price;
+    cout<<"enter the man.f year : "<<endl;
+    cin >>car2 . year;
+    
+    car1.display();
+    cout<<endl;
+    car2.display();
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    public: //public access specifier
+    string teacher_name;
+    string subject;
+    int yr_experience;
+    char gender;
+    
+    //function to dispaly the output
+    void display()
+    {
+        cout<<"teacher_name :  "<<teacher_name<<endl;
+        cout<<"subject they teach : "<<subject<<endl;
+        cout<<"yr_experience : "<<yr_experience<<endl;
+        cout<<"gender : "<<gender<<endl;
+    }
+    
+};
+
+int main()
+{
+    Teacher teacher1; //creating an object of the class car
+    cout<<"enter the teacher_name : "<<endl;
+    //cin >>teacher1 . teacher_name;
+    getline(cin,teacher1.teacher_name);
+    cout<<"enter the subject : "<<endl;
+    getline(cin,teacher1.subject);
+    cout<<"enter the  yr_experience: "<<endl;
+    cin >>teacher1.yr_experience;
+    cout<<"enter the gender : "<<endl;
+    cin >>teacher1 . gender;
+  
+    cin.ignore(); //buffer value will be ignored
+
+    Teacher teacher2; //creating an object of the class car
+    cout<<"enter the teacher_name : "<<endl;
+    //cin >>teacher1 . teacher_name;
+    getline(cin,teacher2.teacher_name);
+    cout<<"enter the subject : "<<endl;
+    getline(cin,teacher2.subject);
+    cout<<"enter the  yr_experience: "<<endl;
+    cin >>teacher2.yr_experience;
+    cout<<"enter the gender : "<<endl;
+    cin >>teacher2.gender; 
+    
+    teacher1.display();
+    cout<<endl;
+    teacher2.display();
+    
+    return 0;
+}
+
+
+
+
+
+// Online C++ compiler to run C++ program online
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+    private:
+      //data members
+      string name;
+      string subject;
+      int year;
+    public: 
+      void setdetail(string tname, string tsubject, int tyear)
+      {
+          name = tname;
+          subject = tsubject;
+          year = tyear;
+      }
+    
+    //member function 
+    void display()
+    {
+        cout<<"name : "<<name<<endl;
+        cout<<"subject : "<<subject<<endl;
+        cout<<"year : "<<year<<endl;
+    }
+    
+};
+
+int main()
+{
+    //creat 2 object
+    Teacher t1,t2,t3;
+    //assign values to object
+    /*t1.name = "riya";
+    t1.subject = "electronics";
+    t1.year = 9;*/
+    
+    t1.setdetail("VENKAT ","maths ",9);
+    t2.setdetail("FAYAZ ","hindi ",4);
+    t3.setdetail("VAMSI ","english ",6);
+    
+    t1.display();
+    cout<<endl;
+    t2.display();
+    cout<<endl;
+    t3.display();
+
+    return 0;
+}
+

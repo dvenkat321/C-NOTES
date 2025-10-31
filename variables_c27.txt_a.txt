@@ -1,0 +1,90 @@
+#include <iostream>
+
+int main() {
+    // Write C++ code here
+    std::cout << "hello world";
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a= 10;
+    cout << "enter your reg no."<<a;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout << "enter your reg no."<<a;
+    cin>>a;
+    cout <<"your reg no is:"<<a;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    int b;
+    cout << "enter your reg no:venkat.";
+    cin >>a;
+    cout <<"enter your frds reg no.";
+    cin >>b;
+    cout <<"venkat your reg no is:"<<a<<endl;
+    cout <<"your frds reg no is:"<<b;
+    return 0;
+}
+
+
+
+
+
+
+
+
+variables >>>> in c++ are used to stor3e data
+data types in c++
+data types help compilre allocate the aPPROPRIATE AMOUNT OF 
+memory and determine how to intewr pret the data
+int >>>>these are used to store integer values  (whole number)
+i.e 1,2,3,4,5,
+
+float>>>> used to store decimal values (single precision)  >>>i.e  44.6,23.5
+
+double  >>>(double presition) i.e 23.675,56.468
+
+char >>> used to store a singlke character ni.e a,d.
+striong >> is a sequence of characters i.e "hello" >>>'hello'>>>>"hello
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int a =10;
+    float b =50.6;
+    double c =10.467390869;
+    char  d ='v';
+    string e = "venkat";
+    cout << "integer a="<<a<<endl;
+    cout <<"float b="<<b<<endl;
+
+    return 0;
+}

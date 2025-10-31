@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    string name ;
+    int age;
+    float height;
+    double weight;
+    char  blood_group;
+    cout << "enter your name :";
+    cin>>name;
+    
+    cout << "enter your age :";
+    cin>>age;
+    
+    cout << "enter your height(in feeds):";
+    cin>>height;
+    
+    cout <<"enter your weight(in kgs):";
+    cin>>weight;
+    
+    cout <<"enter your blood_group :";
+    cin>>blood_group;
+    
+    return 0;
+}

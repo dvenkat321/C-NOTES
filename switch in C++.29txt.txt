@@ -1,0 +1,93 @@
+switch in C++
+
+
+
+
+ex:-
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std; 
+int main()
+{
+   int day;// Write C++ code here
+   cout << "enter a number (1-7) corresponding to the day of the week  :";
+   cin >> day;
+   //switch statement to determine the day of week
+   switch(day)
+   {
+       case 1:
+         cout<<"monday " <<endl;
+         break;
+       case 2:
+         cout<<"tuesday " <<endl;
+         break;
+       case 3:
+         cout<<"wednesday " <<endl;
+         break;
+       case 4:
+         cout<<"thuesday " <<endl;
+         break;
+       case 5:
+         cout<<"friday " <<endl;
+         break;
+       case 6:
+         cout<<"saturday " <<endl;
+         break;
+       case 7:
+         cout<<"sunday " <<endl;
+         break;
+       default:
+         cout<<"invalid input! please enter a number between 1 and 7 "<<endl;
+         break;
+   }
+   return 0;
+}
+
+
+
+
+
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std; 
+int main()
+{
+   char day;// Write C++ code here
+   cout << "enter a character corresponding to the day of the week (a,b,c,d,e,f,g)  :";
+   cin >> day;
+   day = tolower(day);				____________________(for capital letters(day = toupper(day)))
+   //switch statement to determine the day of week
+   switch(day)
+   {
+       case 'a':
+         cout<<"monday " <<endl;
+         break;
+       case 'b':
+         cout<<"tuesday " <<endl;
+         break;
+       case 'c':
+         cout<<"wednesday " <<endl;
+         break;
+       case 'd':
+         cout<<"thursday " <<endl;
+         break;
+       case 'e':
+         cout<<"friday " <<endl;
+         break;
+       case 'f':
+         cout<<"saturday " <<endl;
+         break;
+       case 'g':
+         cout<<"sunday " <<endl;
+         break;
+       default:
+         cout<<"invalid input! please enter a character between a and g "<<endl;
+         break;
+   }
+   return 0;
+}

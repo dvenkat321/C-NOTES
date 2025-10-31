@@ -1,0 +1,95 @@
+functions in C++
+a function in C++ is a group of statements that performs a specific task 
+and can be reused anywhere in tne program
+	1. reusability - write once use many times
+	2. readability - code becomee easier to read and understand
+	3. debugging - errors are easier to find since each function is small and focused
+	4. modularity - large programs are divided into smaller parts
+	5. collaboration - multiply people can work on different functions of same program
+
+
+
+		// functions in C++ a simple one
+		#include <iostream>
+		using namespace std;
+
+		//function defination
+		void greet()
+		{
+    		     cout << "happy birthday!!!!"<<endl;
+		}
+		int main()
+		{
+    		     greet(); //calling the function
+    		     greet();
+    		     greet();
+    		     //body
+    		     return 0;
+		}
+
+
+
+
+// functions in C++ a simple one
+#include <iostream>
+using namespace std;
+
+//function defination
+int add(int a , int b ) //passing parameters
+{
+    return a + b; //returning the values
+}
+int mul(int a , int b)
+{
+    return a * b;
+}
+int sub(int a , int b)
+{
+    return a - b;
+}
+
+int main()
+{
+    cout<<"addtion:"<<add(5,10)<<endl;
+    cout<<"multiplication:"<<mul(5,10)<<endl;
+    cout<<"substraction:"<<sub(5,10)<<endl;
+    return 0;
+}
+
+
+
+// functions in C++ a simple one
+#include <iostream>
+using namespace std;
+
+//function defination
+int add(int a , int b ) //passing parameters
+{
+    return a + b; //returning the values
+}
+int mul(int a , int b)
+{
+    return a * b;
+}
+int sub(int a , int b)
+{
+    return a - b;
+}
+float div1(int a , int b)
+{
+    if(b == 0)
+    {
+        cout<<"division by zero!!infinite"<<endl;
+        return 0;
+    }
+    return (float)a/b; 
+}
+
+int main()
+{
+    cout<<"addtion:"<<add(5,10)<<endl;
+    cout<<"multiplication:"<<mul(5,10)<<endl;
+    cout<<"substraction:"<<sub(5,10)<<endl;
+    cout<<"divition:"<<div1(5,10)<<endl;
+    return 0;
+}
